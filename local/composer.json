@@ -1,0 +1,23 @@
+{
+    "name": "",
+    "description": "",
+    "minimum-stability": "stable",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alexander Shatalov",
+            "email": "alexander.shataloff@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Exam1\\": "classes/Exam1"
+        }
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^3.4"
+    },
+    "extra": {
+        "bitrix-dir": "../local"
+    }
+}
