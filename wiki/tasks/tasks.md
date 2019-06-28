@@ -8,5 +8,9 @@
 
 * [Тестовый билет №2 (pdf)](http://training.1c-bitrix.ru/upload/exam_dev/pubinfo/Ex1Demo2.pdf)
 
+## Примеры заданий
+
+* [[ex1-1] Добавить раздел сайта: Партнерам.]
+
 ____
 * [README.md](../../README.md)
