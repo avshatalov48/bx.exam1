@@ -20,7 +20,7 @@ if ($iHours >= 9 && $iHours <= 18) {
 }
 
 ?><!DOCTYPE html>
-<html lang="ru">
+<html lang="<?= LANGUAGE_ID; ?>">
 
 <head>
     <title><? $APPLICATION->ShowTitle() ?></title>
