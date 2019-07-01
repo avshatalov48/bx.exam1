@@ -1,0 +1,204 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  font-family: 'HelveticaNeueCyrRoman', sans-serif;
+}
+/* HTML5 display-role reset for older browsers */
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+[hidden] {
+  display: none;
+}
+a,
+li,
+a:active,
+a:hover {
+  outline: 0 !important;
+}
+img {
+  border: 0;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+input[type="submit"],
+button,
+.btn {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-appearance: none;
+  cursor: pointer;
+  outline: none;
+  overflow: visible;
+  margin: 0;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: center;
+  font-family: 'HelveticaNeueCyrRoman', sans-serif;
+  transition: all ease 0.3s;
+  text-decoration: none;
+}
+input[type="text"],
+input[type="password"],
+input[type="color"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="range"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+input[type="week"],
+textarea {
+  display: block;
+  width: 100%;
+  outline: none;
+  font-family: 'HelveticaNeueCyrRoman', sans-serif;
+}
+textarea {
+  overflow: auto;
+  resize: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+a {
+  transition-property: background, color;
+  transition-timing-function: ease;
+  transition-duration: 0.1s;
+}
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
