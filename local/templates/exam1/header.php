@@ -107,6 +107,7 @@ if ($iHours >= 9 && $iHours <= 18) {
         </div>
     </header>
     <!-- /header -->
+
     <!-- nav -->
     <nav class="nav">
         <div class="inner-wrap">
@@ -376,6 +377,30 @@ if ($iHours >= 9 && $iHours <= 18) {
 
             <!-- side -->
             <div class="side">
+
+                <!-- side menu -->
+                <? if (!$bIsMain): ?>
+                    <? $APPLICATION->IncludeComponent(
+                        "bitrix:menu",
+                        "left",
+                        array(
+                            "ALLOW_MULTI_SELECT" => "N",
+                            "CHILD_MENU_TYPE" => "left",
+                            "DELAY" => "N",
+                            "MAX_LEVEL" => "1",
+                            "MENU_CACHE_GET_VARS" => array(),
+                            "MENU_CACHE_TIME" => "3600",
+                            "MENU_CACHE_TYPE" => "A",
+                            "MENU_CACHE_USE_GROUPS" => "Y",
+                            "ROOT_MENU_TYPE" => "left",
+                            "USE_EXT" => "Y",
+                            "COMPONENT_TEMPLATE" => "left"
+                        ),
+                        false
+                    ); ?>
+                <? endif; ?>
+                <!-- /side menu -->
+
                 <!-- side anonse -->
                 <div class="side-block side-anonse">
                     <div class="title-block"><span class="i i-title01"></span>Полезная информация!</div>
@@ -384,6 +409,7 @@ if ($iHours >= 9 && $iHours <= 18) {
                     </div>
                 </div>
                 <!-- /side anonse -->
+
                 <!-- side wrap -->
                 <div class="side-wrap">
                     <div class="item-wrap">
