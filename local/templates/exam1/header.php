@@ -109,69 +109,22 @@ if ($iHours >= 9 && $iHours <= 18) {
     <!-- /header -->
 
     <!-- nav -->
-    <nav class="nav">
-        <div class="inner-wrap">
-            <div class="menu-block popup-wrap">
-                <a href="" class="btn-menu btn-toggle"></a>
-                <div class="menu popup-block">
-                    <ul class="">
-                        <li class="main-page"><a href="">Главная</a>
-                        </li>
-                        <li>
-                            <a href="">Компания</a>
-                            <ul>
-                                <li>
-                                    <a href="">Пункт 1</a>
-                                    <ul>
-                                        <li><a href="">Пункт 1</a>
-                                        </li>
-                                        <li><a href="">Пункт 2</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li><a href="">Пункт 2</a>
-                                </li>
-                                <li><a href="">Пункт 3</a>
-                                </li>
-                                <li><a href="">Пункт 4</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li><a href="">Новости</a>
-                        </li>
-                        <li>
-                            <a href="">Каталог</a>
-                            <ul>
-                                <li>
-                                    <a href="">Пункт 1</a>
-                                    <ul>
-                                        <li><a href="">Пункт 1</a>
-                                        </li>
-                                        <li><a href="">Пункт 2</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li><a href="">Пункт 2</a>
-                                </li>
-                                <li><a href="">Пункт 3</a>
-                                </li>
-                                <li><a href="">Пункт 4</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li><a href="">Фотогалерея</a>
-                        </li>
-                        <li><a href="">Партнерам</a>
-                        </li>
-                        <li><a href="">Контакты</a>
-                        </li>
-                    </ul>
-                    <a href="" class="btn-close"></a>
-                </div>
-                <div class="menu-overlay"></div>
-            </div>
-        </div>
-    </nav>
+    <?$APPLICATION->IncludeComponent("bitrix:menu", "top", Array(
+        "ALLOW_MULTI_SELECT" => "N",	// Разрешить несколько активных пунктов одновременно
+        "CHILD_MENU_TYPE" => "left",	// Тип меню для остальных уровней
+        "DELAY" => "N",	// Откладывать выполнение шаблона меню
+        "MAX_LEVEL" => "3",	// Уровень вложенности меню
+        "MENU_CACHE_GET_VARS" => array(	// Значимые переменные запроса
+            0 => "",
+        ),
+        "MENU_CACHE_TIME" => "3600",	// Время кеширования (сек.)
+        "MENU_CACHE_TYPE" => "A",	// Тип кеширования
+        "MENU_CACHE_USE_GROUPS" => "Y",	// Учитывать права доступа
+        "ROOT_MENU_TYPE" => "top",	// Тип меню для первого уровня
+        "USE_EXT" => "Y",	// Подключать файлы с именами вида .тип_меню.menu_ext.php
+    ),
+        false
+    );?>
     <!-- /nav -->
 
     <? if (!$bIsMain): ?>
