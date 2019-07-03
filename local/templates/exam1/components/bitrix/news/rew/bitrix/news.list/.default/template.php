@@ -63,8 +63,7 @@ $this->setFrameMode(true);
             <div class="review-img-wrap">
                 <a href="<?= $arItem["DETAIL_PAGE_URL"] ?>">
                     <? if (is_array($arItem["PREVIEW_PICTURE"])): ?>
-                        <img border="0"
-                             src="<?= $arItem["PREVIEW_PICTURE"]["SRC"] ?>"
+                        <img src="<?= $arItem["PREVIEW_PICTURE"]["SRC"] ?>"
                              width="<?= $arItem["PREVIEW_PICTURE"]["WIDTH"] ?>"
                              height="<?= $arItem["PREVIEW_PICTURE"]["HEIGHT"] ?>"
                              alt="<?= $arItem["PREVIEW_PICTURE"]["ALT"] ?>"
