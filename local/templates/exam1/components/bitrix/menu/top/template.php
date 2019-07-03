@@ -1,8 +1,16 @@
 <?if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
 
 <?if (!empty($arResult)):?>
-<ul id="horizontal-multilevel-menu">
+    <nav class="nav">
+    <div class="inner-wrap">
+    <div class="menu-block popup-wrap">
+    <a href="" class="btn-menu btn-toggle"></a>
+    <div class="menu popup-block">
 
+<ul>
+    <li class="main-page">
+        <a href="/">Главная</a>
+    </li>
 <?
 $previousLevel = 0;
 foreach($arResult as $arItem):?>
@@ -52,5 +60,10 @@ foreach($arResult as $arItem):?>
 <?endif?>
 
 </ul>
-<div class="menu-clear-left"></div>
+                <a href="" class="btn-close"></a>
+    </div>
+        <div class="menu-overlay"></div>
+    </div>
+    </div>
+    </nav>
 <?endif?>
