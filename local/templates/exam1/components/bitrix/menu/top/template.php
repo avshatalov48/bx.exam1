@@ -29,6 +29,12 @@ foreach($arResult as $arItem):?>
 				<ul>
 		<?endif?>
 
+        <? //<Текст перед пунктами под-меню> ?>
+        <? if ($arItem["PARAMS"]["MENU_TEXT"]):?>
+            <div class="menu-text">
+                <?= $arItem["PARAMS"]["MENU_TEXT"] ?>
+            </div>
+        <? endif; ?>
 	<?else:?>
 
 		<?if ($arItem["PERMISSION"] > "D"):?>
