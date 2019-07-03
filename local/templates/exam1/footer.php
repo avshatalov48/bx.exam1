@@ -165,7 +165,14 @@ use Bitrix\Main\Localization\Loc;
             <div class="title-block"><?= Loc::getMessage("FOOTER_CONTACTS_INFORMATION"); ?></div>
             <div class="loc-block">
                 <div class="address">ул. Летняя, стр.12, офис 512</div>
-                <div class="phone"><a href="tel:84952128506">8 (495) 212-85-06</a>
+                <div class="phone">
+                    <?
+                    $APPLICATION->IncludeFile(
+                        SITE_DIR . "include/phone.php",
+                        Array(),
+                        Array("MODE" => "html")
+                    );
+                    ?>
                 </div>
             </div>
             <div class="main-soc-block">
