@@ -1,12 +1,12 @@
 # Задания
 
-* [Примеры заданий (pdf)](http://training.1c-bitrix.ru/upload/exam_dev/pubinfo/Ex1AllType.pdf)
+* [Примеры заданий (pdf)](../pubinfo/Ex1AllType.pdf)
 
-* [Материалы к ним (zip)](http://training.1c-bitrix.ru/upload/exam_dev/pubinfo/Ex1DemoMaterials.zip)
+* [Материалы к ним (zip)](../pubinfo/Ex1DemoMaterials.zip)
 
-* [Тестовый билет №1 (pdf)](http://training.1c-bitrix.ru/upload/exam_dev/pubinfo/Ex1Demo1.pdf)
+* [Тестовый билет №1 (pdf)](../pubinfo/Ex1Demo1.pdf)
 
-* [Тестовый билет №2 (pdf)](http://training.1c-bitrix.ru/upload/exam_dev/pubinfo/Ex1Demo2.pdf)
+* [Тестовый билет №2 (pdf)](../pubinfo/Ex1Demo2.pdf)
 
 ## Примеры заданий
 
