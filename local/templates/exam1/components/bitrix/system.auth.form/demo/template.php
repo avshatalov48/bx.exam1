@@ -3,17 +3,18 @@
 if ($arResult ['SHOW_ERRORS'] == 'Y' && $arResult ['ERROR'])
 	ShowMessage ( $arResult ['ERROR_MESSAGE'] );
 
-//dump($arParams);
-//dump($arResult);
 CJSCore::Init();
 ?>
-<?
-if($arResult["FORM_TYPE"] == "login")
-{
-?>
+
 <nav class="menu-block">
+
+<? if($arResult["FORM_TYPE"] == "login"): ?>
 	<ul>
-		<li class="att popup-wrap"><a id="hd_singin_but_open" href="" class="btn-toggle"><?=GetMessage("AUTH_LOGIN_LINK_TEXT")?></a>
+		<li class="att popup-wrap">
+            <? //<Войти на сайт> ?>
+            <a id="hd_singin_but_open" href="<?=$arResult["AUTH_URL"]?>" class="btn-toggle">
+                <?=GetMessage("AUTH_LOGIN_LINK_TEXT")?>
+            </a>
 			<form class="frm-login popup-block" name="system_auth_form<?=$arResult["RND"]?>" method="post" target="_top" action="<?=$arResult["AUTH_URL"]?>">
 				<div class="frm-title"><?=GetMessage("AUTH_LOGIN_LINK_TEXT")?></div>
 				<a href="" class="btn-close"><?=GetMessage("AUTH_LOGIN_LINK_CLOSE_TEXT")?></a>
@@ -42,10 +43,15 @@ if($arResult["FORM_TYPE"] == "login")
 				<div class="frm-row">
 					<input type="password" placeholder="<?=GetMessage("AUTH_PASSWORD")?>" name="USER_PASSWORD" maxlength="50" size="17" autocomplete="off" />			
 				</div>
-				<div class="frm-row">
-					<a href="" class="btn-forgot"><?=GetMessage("AUTH_FORGOT_PASSWORD_2")?></a>
+
+                <? //<Забытый пароль> ?>
+                <div class="frm-row">
+					<a href="<?=$arResult["AUTH_FORGOT_PASSWORD_URL"]?>" class="btn-forgot">
+                        <?=GetMessage("AUTH_FORGOT_PASSWORD_2")?>
+                    </a>
 				</div>
-				<div class="frm-row">
+
+                <div class="frm-row">
 					<div class="frm-chk">
 						<input type="checkbox" id="login" name="USER_REMEMBER" value="Y"> <label for="login"><?=GetMessage("AUTH_REMEMBER_ME_SHORT")?></label>
 					</div>
@@ -54,9 +60,36 @@ if($arResult["FORM_TYPE"] == "login")
 					<input type="submit" name="Login" value="<?=GetMessage("AUTH_LOGIN_BUTTON")?>">
 				</div>
 			</form></li>
-		<li><a href=""><?=GetMessage("AUTH_REGISTER")?></a></li>
+		<? //<Зарегистрироваться> ?>
+        <li>
+            <a href="<?=$arResult["AUTH_REGISTER_URL"]?>">
+                <?=GetMessage("AUTH_REGISTER")?>
+            </a>
+        </li>
 	</ul>
+
+<? else: ?>
+
+<? //<Форма, если авторизован> ?>
+<ul>
+    <li>
+        <a href="<?= $arResult["PROFILE_URL"] ?>" title="<?= GetMessage("AUTH_PROFILE") ?>">
+            <?= $arResult["USER_NAME"] ?> [<?= $arResult["USER_LOGIN"] ?>]
+        </a>
+    </li>
+    <li>
+        <a href="<? echo $APPLICATION->GetCurPageParam("logout=yes", [
+            "login",
+            "logout",
+            "register",
+            "forgot_password",
+            "change_password",
+        ]); ?>">
+            <?= GetMessage("AUTH_LOGOUT_BUTTON") ?>
+        </a>
+    </li>
+</ul>
+
+<? endif; ?>
+
 </nav>
-<?
-}
-?>
