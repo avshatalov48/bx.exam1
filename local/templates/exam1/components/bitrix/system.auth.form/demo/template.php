@@ -44,6 +44,16 @@ CJSCore::Init();
 					<input type="password" placeholder="<?=GetMessage("AUTH_PASSWORD")?>" name="USER_PASSWORD" maxlength="50" size="17" autocomplete="off" />			
 				</div>
 
+                <? //<Captcha> ?>
+                <?if ($arResult["CAPTCHA_CODE"]):?>
+                    <div class="frm-row">
+                            <?echo GetMessage("AUTH_CAPTCHA_PROMT")?>:<br />
+                            <input type="hidden" name="captcha_sid" value="<?echo $arResult["CAPTCHA_CODE"]?>" />
+                            <img src="/bitrix/tools/captcha.php?captcha_sid=<?echo $arResult["CAPTCHA_CODE"]?>" width="180" height="40" alt="CAPTCHA" /><br /><br />
+                            <input type="text" name="captcha_word" maxlength="50" value="" />
+                    </div>
+                <?endif?>
+
                 <? //<Забытый пароль> ?>
                 <div class="frm-row">
 					<a href="<?=$arResult["AUTH_FORGOT_PASSWORD_URL"]?>" class="btn-forgot">
@@ -59,7 +69,24 @@ CJSCore::Init();
 				<div class="frm-row">
 					<input type="submit" name="Login" value="<?=GetMessage("AUTH_LOGIN_BUTTON")?>">
 				</div>
-			</form></li>
+
+                <? //<Авторизация через соц.сети> ?>
+                <? if ($arResult["AUTH_SERVICES"]): ?>
+                    <div class="frm-row">
+                        <div class="bx-auth-lbl"><?= GetMessage("socserv_as_user_form") ?></div>
+                        <?
+                        $APPLICATION->IncludeComponent("bitrix:socserv.auth.form", "icons",
+                            [
+                                "AUTH_SERVICES" => $arResult["AUTH_SERVICES"],
+                                "SUFFIX"        => "form",
+                            ],
+                            $component,
+                            ["HIDE_ICONS" => "Y"]
+                        );
+                        ?>
+                    </div>
+                <? endif ?>
+            </form></li>
 		<? //<Зарегистрироваться> ?>
         <li>
             <a href="<?=$arResult["AUTH_REGISTER_URL"]?>">
