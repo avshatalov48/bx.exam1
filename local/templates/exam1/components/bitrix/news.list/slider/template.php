@@ -37,10 +37,13 @@ $this->setFrameMode(true);
                             <div class="photo-block">
                                 <? if ($arItem["PREVIEW_PICTURE"]): ?>
                                     <?php
-                                    $sPreviewPicture = $arItem["PREVIEW_PICTURE"];
-                                    $file = CFile::ResizeImageGet($sPreviewPicture, ['width' => 39, 'height' => 39],
-                                        BX_RESIZE_IMAGE_PROPORTIONAL, true);
-                                    $sPictureSrc = $file['src'];
+                                    $arImageFile = CFile::ResizeImageGet(
+                                        $arItem["PREVIEW_PICTURE"]["ID"],
+                                        ['width' => 39, 'height' => 39],
+                                        BX_RESIZE_IMAGE_EXACT,
+                                        true
+                                    );
+                                    $sPictureSrc = $arImageFile['src'];
                                     ?>
                                 <? else: ?>
                                     <?php

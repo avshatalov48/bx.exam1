@@ -62,10 +62,19 @@ $this->setFrameMode(true);
         <? if ($arParams["DISPLAY_PICTURE"] != "N"): ?>
             <div class="review-img-wrap">
                 <a href="<?= $arItem["DETAIL_PAGE_URL"] ?>">
-                    <? if (is_array($arItem["PREVIEW_PICTURE"])): ?>
-                        <img src="<?= $arItem["PREVIEW_PICTURE"]["SRC"] ?>"
-                             width="<?= $arItem["PREVIEW_PICTURE"]["WIDTH"] ?>"
-                             height="<?= $arItem["PREVIEW_PICTURE"]["HEIGHT"] ?>"
+                    <? if (is_array($arItem["DETAIL_PICTURE"])): ?>
+                        <?php
+                        $arImage = CFile::ResizeImageGet(
+                            $arItem["DETAIL_PICTURE"]["ID"],
+                            ["width" => 68, "height" => 50],
+                            BX_RESIZE_IMAGE_EXACT,
+                            true
+                        );
+                        ?>
+
+                        <img src="<?= $arImage["src"] ?>"
+                             width="<?= $arImage["width"] ?>"
+                             height="<?= $arImage["height"] ?>"
                              alt="<?= $arItem["PREVIEW_PICTURE"]["ALT"] ?>"
                              title="<?= $arItem["PREVIEW_PICTURE"]["TITLE"] ?>"
                         />
