@@ -8,6 +8,8 @@
 !/bitrix/backup
 
 /local/vendor
+
+!/upload/.htaccess
 /upload
 
 *.bak
@@ -15,6 +17,8 @@
 *.tmp
 
 *.rar
+
+!/wiki/pubinfo/Ex1DemoMaterials.zip
 *.zip
 
 composer.phar
