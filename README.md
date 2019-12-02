@@ -2,7 +2,7 @@
 
 [![Donate](https://img.shields.io/badge/Donate-Yandex.Money-green.svg)](https://money.yandex.ru/to/410013131142938)
 
-* [Задания](./wiki/tasks/tasks.md)
+* [Задания и решения](./wiki/tasks/tasks.md)
 
 * [Темы заданий, требования к решениям](./wiki/pubinfo/Ex1Description.pdf)
 
@@ -12,7 +12,7 @@
 
 ## Резервные копии
 
-* [Архив](https://yadi.sk/d/mcvwEOQUAaIclQ)
+* [Резервные копии](https://yadi.sk/d/mcvwEOQUAaIclQ)
 
 * [restore.php](http://www.1c-bitrix.ru/download/scripts/restore.php)
 
@@ -48,7 +48,7 @@ SET GLOBAL sql_mode='';
 
 * [Подготовка к экзамену 1С-Битрикс. Запуск и настройка (Михаил Базаров)](https://www.youtube.com/watch?v=9wqmgVOoZVU)
 
-* [Новая система сертификации партнеров Битрикс(Михаил Базаров)](https://www.youtube.com/watch?v=Gq1AnUsgnZE)
+* [Новая система сертификации партнеров Битрикс (Михаил Базаров)](https://www.youtube.com/watch?v=Gq1AnUsgnZE)
 
 * [VMware Workstation Player (бесплатен для некоммерческого, личного и домашнего использования)](https://www.vmware.com/products/workstation-player/workstation-player-evaluation.html)
 
