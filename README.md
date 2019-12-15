@@ -1,4 +1,4 @@
-# Экзамен «№1 Интеграция дизайна и настройка платформы» по платформе «Bitrix Framework» (Версия 2.0.16, 27.02.2019)
+# Готовый экзамен «№1 Интеграция дизайна и настройка платформы» по платформе «Bitrix Framework» (Версия 2.0.16, 27.02.2019)
 
 [![Donate](https://img.shields.io/badge/Donate-Yandex.Money-green.svg)](https://money.yandex.ru/to/410013131142938)
 
@@ -13,6 +13,8 @@
 ## Резервные копии
 
 * [Резервные копии](https://yadi.sk/d/mcvwEOQUAaIclQ)
+
+* [Бэкапы БД](https://github.com/avshatalov48/bx.exam1/tree/master/bitrix/backup)
 
 * [restore.php](http://www.1c-bitrix.ru/download/scripts/restore.php)
 
