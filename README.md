@@ -1,4 +1,4 @@
-# Готовый экзамен «№1 Интеграция дизайна и настройка платформы» по платформе «Bitrix Framework» (Версия 2.0.16, 27.02.2019)
+# Готовый экзамен Битрикс «№1 Интеграция дизайна и настройка платформы» по платформе «Bitrix Framework» (Версия 2.0.16, 27.02.2019)
 
 [![Donate](https://img.shields.io/badge/Donate-Yandex.Money-green.svg)](https://money.yandex.ru/to/410013131142938)
 
@@ -53,6 +53,12 @@ SET GLOBAL sql_mode='';
 * [Новая система сертификации партнеров Битрикс (Михаил Базаров)](https://www.youtube.com/watch?v=Gq1AnUsgnZE)
 
 * [VMware Workstation Player (бесплатен для некоммерческого, личного и домашнего использования)](https://www.vmware.com/products/workstation-player/workstation-player-evaluation.html)
+
+### Опыт сдачи экзамена
+
+* [Экзамен битрикс: сдан (Алексей Просвиров)](https://whatasoft.net/rus/blog/bitrix-exam-did-it/)
+
+* [Стал сертифицированным разработчиком 1С-Битрикс (Антон Кулешов)](http://falbar.ru/article/stal-sertifitsirovannym-razrabotchikom-1s-bitriks)
 
 ### Справочники
 
