@@ -12,6 +12,8 @@
 
 * [Новая система сертификации партнеров Битрикс (Михаил Базаров)](https://www.youtube.com/watch?v=Gq1AnUsgnZE)
 
+* [Download VirtualBox](https://www.virtualbox.org/wiki/Downloads)
+
 * [VMware Workstation Player (бесплатен для некоммерческого, личного и домашнего использования)](https://www.vmware.com/products/workstation-player/workstation-player-evaluation.html)
 
 ## Опыт сдачи экзамена
@@ -22,11 +24,11 @@
 
 ## Справочники
 
-* [api_d7.chm](https://training.1c-bitrix.ru/upload/exam_dev/pubinfo/api_d7.chm)
+* [Документация для разработчиков (bsm_api.chm)](https://dev.1c-bitrix.ru/docs/chm_files/bsm_api.chm)
 
-* [bsm_api.chm](https://training.1c-bitrix.ru/upload/exam_dev/pubinfo/bsm_api.chm)
+* [Документация по API D7 (api_d7.chm)](https://dev.1c-bitrix.ru/docs/chm_files/api_d7.chm)
 
-* [php_manual_ru.chm](https://training.1c-bitrix.ru/upload/exam_dev/pubinfo/php_manual_ru.chm)
+* [php_enhanced_ru.chm](https://www.php.net/distributions/manual/php_enhanced_ru.chm)
 
 ____
 * [README.md](../../README.md)
