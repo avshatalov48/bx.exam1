@@ -16,6 +16,8 @@
 
 * [VMware Workstation Player (бесплатен для некоммерческого, личного и домашнего использования)](https://www.vmware.com/products/workstation-player/workstation-player-evaluation.html)
 
+* [Готовый экзамен Битрикс «№2 Основные технологии, расширение типовых возможностей системы» (Версия 4.0.4, 27.02.2019)](https://github.com/avshatalov48/bx.exam2/)
+
 ## Опыт сдачи экзамена
 
 * [Экзамен битрикс: сдан (Алексей Просвиров)](https://whatasoft.net/rus/blog/bitrix-exam-did-it/)

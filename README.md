@@ -1,7 +1,5 @@
 # Готовый экзамен Битрикс «№1 Интеграция дизайна и настройка платформы» по платформе «Bitrix Framework» (Версия 2.0.16, 27.02.2019)
 
-[![Donate](https://img.shields.io/badge/Donate-Yandex.Money-green.svg)](https://money.yandex.ru/to/410013131142938)
-
 * [Задания и решения](./wiki/tasks/tasks.md)
 
 * [Полезные ссылки](./wiki/others/useful.md)
