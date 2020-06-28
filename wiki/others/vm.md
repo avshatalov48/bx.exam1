@@ -18,6 +18,18 @@
     - Preferences > Color Scheme > Scheme > "Monokai Dark" > Ok
     - Изменение размера шрифта, через колесо мышки, как в PHPStorm           
 
+### Образ 
+
+- Старый экзаменационный сервер (Ubuntu) был удален со страниц Академии. Его можно [скачать с Яндекс.Диск](https://yadi.sk/d/T9nvvNOEiwKXpg)
+
+### Переменные и доступы
+
+- Пользователь системы: bitrix_exam, пароль: 1as2345
+- Адрес локального сайта: http://localhost
+- Корень сайта на диске: /home/bitrix_exam/www/
+- База для установки: sitemanager, пользователь БД: root, пароль: 23sd45
+- PhpMyAdmin: http://localhost/phpmyadmin/
+
 ## Новый экзаменационный сервер (CentOS 7)
 
 - Смена разрешения на большее, чем 1024x768 для Oracle VM VirtualBox:
