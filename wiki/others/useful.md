@@ -10,13 +10,22 @@
 
 * [Форум. Экзамен №1. Вопросы и ответы по заданиям. Часть 2.](https://dev.1c-bitrix.ru/community/forums/forum6/topic96483/)
 
-* [Новая система сертификации партнеров Битрикс (Михаил Базаров)](https://www.youtube.com/watch?v=Gq1AnUsgnZE)
-
 * [Download VirtualBox](https://www.virtualbox.org/wiki/Downloads)
 
 * [VMware Workstation Player (бесплатен для некоммерческого, личного и домашнего использования)](https://www.vmware.com/products/workstation-player/workstation-player-evaluation.html)
 
 * [Готовый экзамен Битрикс «№2 Основные технологии, расширение типовых возможностей системы» (Версия 4.0.4, 27.02.2019)](https://github.com/avshatalov48/bx.exam2/)
+
+## Видео
+
+* [Новая система сертификации партнеров Битрикс (Михаил Базаров)](https://www.youtube.com/watch?v=Gq1AnUsgnZE)
+
+### YouTube-канал "Знания для всех"
+
+* [Экзамен 1С-Битрикс. Интеграция дизайна и настройка платформы. Часть 1](https://www.youtube.com/watch?v=D_0wyN3tWYc)
+* [Экзамен 1С-Битрикс. Интеграция дизайна и настройка платформы. Часть 2](https://www.youtube.com/watch?v=-ImouF2sh3U)
+* [Экзамен 1С-Битрикс. Интеграция дизайна и настройка платформы. Часть 3](https://www.youtube.com/watch?v=eE-AgQyf4Vw)
+* [Экзамен 1С-Битрикс. Интеграция дизайна и настройка платформы. Часть 4](https://www.youtube.com/watch?v=UKetBV7LtWg)
 
 ## Опыт сдачи экзамена
 
